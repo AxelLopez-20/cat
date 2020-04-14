@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SilenceRock</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+</head>
+<body>
+    <div>
+        
+
+        <header>
+            <input type="checkbox" id="btn_menu">
+            <label for="btn_menu">
+                <img id="icono" src="icono.jpg" alt="">
+            </label>
+            <nav class="menu">
+                <ul>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/Hombres">Hombres</a></li>
+                    <li><a href="/Mujeres">Mujeres</a></li>
+                    <li><a href="/Nosotros">Nosotros</a></li>
+                    <li><a href="/Registro">Registros</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
